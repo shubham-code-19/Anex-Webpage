@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailWind Project</title>
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom animation  -->
+    <link rel="stylesheet" href="./Anmiation.css" />
+
+    <!-- swiper js  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="font-body">
+    <!-- Navbar  -->
+    <nav class="border-b-2 border-gray-300 py-5  w-full">
+      <div class="w-full sm:w-[90%] mx-auto flex justify-center gap-52 px-3">
+        <a href="#">
+          <img class="w-[130px] sm:w-full" src="./assets/asset 0.png" alt="" />
+        </a>
+        <div
+          id="nav_menu"
+          class="hidden  lg:flex items-center justify-between flex-col lg:flex-row gap-12  font-semibold text-lg flex-1 fixed lg:relative right-[-30%] lg:right-0 top-[12.6%] duration-1000 lg:ps-20 "
+        >
+          <div class="flex gap-5 flex-col lg:flex-row  ">
+            <a href="#"> Home </a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Team</a>
+          <a href="#">Pricing</a>
+          <a href="#">Faq's</a>
+          </div>
+          <div id="btnGrup" class="flex flex-col lg:flex-row    gap-4 sm:gap-8 items-center ">
+            <a href="#" class="text-base sm:text-xl font-bold"> login </a>
+            <a
+              href="#"
+              class="allBtnAnme bg-Grenne px-5 py-2 text-sm sm:px-8 sm:py-3 rounded-full sm:text-xl font-bold text-white"
+              >SignUp</a
+            >
+          </div>
+        </div>
+        
+        <div class="lg:hidden">
+          <i class="fa-solid fa-bars text-2xl  " onclick="sideBars()"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar End -->
+
+    <!-- herosection start-->
+    <section id="herosection" class=" ">
+      <div
+        class="w-[90%] mx-auto flex justify-between flex-col lg:flex-row py-10 lg:py-20"
+      >
+        <div class="left my-5 w-full lg:w-[50%] md:my-[40px] lg:my-0">
+          <h2
+            class="text-[38px] leading-[48px] sm:text-[48px] sm:leading-[56px] md:leading-[48px] lg:leading-[100%] xl:leading-[105px] md:text-[48px] lg:text-[64px] xl:text-8xl text-Grenne font-semibold"
+          >
+            Easy Ways to Promote Your Services
+          </h2>
+          <p
+            class="text-xl pt-4 md:mb-4 pb-9 sm:text-2xl md:py-5 lg:py-5 sm:py-10 md:text-xl"
+          >
+            Start your business today with a great and strong
+            <br class="hidden lg:block" />
+            landing page made to enhance the marketer's
+            <br class="hidden sm:block" />
+            workflow.
+          </p>
+          <a
+            href="#"
+            class="allBtnAnme bg-Grenne px-12 py-4 sm:px-14 sm:py-3 rounded-full sm:text-xl font-bold text-white"
+            >Get Started</a
+          >
+
+          <div
+            class="flex items-end mt-[40px] justify-between sm:justify-start sm:gap-2"
+          >
+            <h2 class="sm:text-4xl font-bold">
+              A+ <br class="sm:hidden" />
+              Rating
+            </h2>
+            <span class="sm:text-lg font-medium w-[120px] sm:w-[auto]">
+              4.9 OUT OF 5 rating
+            </span>
+            <span class="">
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ><i class="fa-solid fa-star" style="color: #ffd43b"></i
+              ><i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="right w-full relative lg:w-[50%] xl:w-[40%] md:my-[40px] lg:my-0"
+        >
+          <div
+            id="agency"
+            class="hidden sm:block absolute left-[-40px] top-[-40px]"
+          >
+            <img class="" src="./assets/agency.png" alt="" />
+          </div>
+          <div
+            class="border-[3px] rounded-[60px] sm:border-4 py-10 border-gray-900 px-5 sm:px-16 sm:py-12 bg-[#FCF5EB]"
+          >
+            <div class="my-4">
+              <h2 class="text-3xl py-2 font-semibold">Get a Quote</h2>
+              <p class="text-gray-500 text-lg font-bold">
+                Marketing Business campaign
+              </p>
+            </div>
+            <div id="inputsBox">
+              <div id="idnput1 " class="py-2 relative">
+                <input
+                  type="text"
+                  placeholder="Complete Name"
+                  class="border border-black w-full bg- rounded-full py-4 px-3 placeholder:text-black placeholder:text-base"
+                />
+                <i
+                  class="fa-regular fa-user absolute border border-black p-5 rounded-full right-0 bg-white"
+                ></i>
+              </div>
+              <div id="idnput2 " class="py-2 relative">
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  class="border border-black w-full rounded-full py-4 px-3 placeholder:text-black placeholder:text-base"
+                />
+                <i
+                  class="fa-regular fa-envelope absolute border border-black p-5 rounded-full right-0"
+                ></i>
+              </div>
+              <div id="idnput3 " class="py-2 relative">
+                <input
+                  type="text"
+                  placeholder="Phone No"
+                  class="border border-black w-full rounded-full py-4 px-3 placeholder:text-black placeholder:text-base"
+                />
+                <i
+                  class="fa-solid fa-phone absolute border border-black p-5 rounded-full right-0"
+                ></i>
+              </div>
+            </div>
+
+            <div id="consuldMethod " class="mt-3 mb-14">
+              <h6 class="font-bold text-lg py-3">Preferred Consult Method:</h6>
+              <div id="radioCont">
+                <input type="radio" name="Prefe" />
+                <span class="text-lg font-medium">Virtual</span>
+                <input type="radio" name="Prefe" />
+                <span class="text-lg font-medium">In-Office</span>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="allBtnAnme  bg-Grenne mt-14 px-16 py-4 sm:px-14 sm:py-5 rounded-full sm:text-xl font-bold text-white"
+              >StartFree Trial</a
+            >
+
+            <div id="dots_animation" class="hidden sm:block">
+              <img src="./assets/asset 2.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="#arrowImage lg:w-[25%] xl:w-full hidden lg:block absolute lg:left-[-115px] lg:top-[291px] xl:left-[-281px] xl:top-[291px] :"
+          >
+            <img class="" src="./assets/asset 1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero section end  -->
+
+    <!-- ulaimateDesign Section start -->
+    <section
+      id="ulaimateDesign"
+      style="background-image: url(assets/asset\ 37.png)"
+      class="py-20 sm:py-40"
+    >
+      <div class="lg:w-[90%] mx-auto">
+        <div class="flex flex-col items-center text-center">
+          <h2
+            class="text-[2rem] md:w-[80%] sm:text-[45px] leading-10 md:leading-snug lg:text-7xl font-semibold"
+          >
+            Unlimited Design At <br />
+            The <span class="greenLine">Next Level</span>
+          </h2>
+          <p class="leading-7 w-[300px] md:w-[90%] lg:w-auto sm:text-2xl mt-5">
+            component library to build your own components and pieces of UI.
+            Reuse <br class="hidden sm:block" />
+            existing Hero, sections
+          </p>
+        </div>
+        <div class="flex justify-center mt-8 relative">
+          <img src="./assets/asset 3.jpeg" alt="" class="rounded-3xl" />
+          <div class="absolute hidden sm:block left-[60px] top-[40px]">
+            <img src="./assets/asset 2.png" alt="" />
+          </div>
+          <div id="dots_animation-two" class="hidden sm:block">
+            <img src="./assets/asset 2.png" alt="" />
+          </div>
+        </div>
+
+        <div
+          id="memberss"
+          class="flex flex-col sm:flex-row sm:gap-20 justify-center mt-10 items-center"
+        >
+          <div
+            class="flex px-5 sm:px-0 gap-20 justify-center w-full sm:w-auto mt-5 sm:mt-0 items-center sm:gap-5"
+          >
+            <div>
+              <h2 class="text-7xl font-semibold">
+                40<sub class="text-2xl">+</sub>
+              </h2>
+              <p>
+                Professinal <br />
+                Team Members
+              </p>
+            </div>
+            <div>
+              <img src="./assets/asset 4.png" class="w-full" alt="" />
+            </div>
+          </div>
+          <div
+            class="flex px-5 sm:px-0 gap-20 justify-center w-full sm:w-auto mt-5 sm:mt-0 items-center sm:gap-5"
+          >
+            <div>
+              <h2 class="text-7xl font-semibold">
+                14<sub class="text-2xl">K</sub>
+              </h2>
+              <p>
+                Professinal <br />
+                Team Members
+              </p>
+            </div>
+            <div>
+              <img src="./assets/asset 5.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="flex px-5 sm:px-0 gap-20 justify-center w-full sm:w-auto mt-5 sm:mt-0 items-center sm:gap-5"
+          >
+            <div>
+              <h2 class="text-7xl font-semibold">
+                10<sub class="text-2xl">k</sub>
+              </h2>
+              <p>
+                Professinal <br />
+                Team Members
+              </p>
+            </div>
+            <div>
+              <img src="./assets/asset 6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ulaimateDesign Section end -->
+
+    <!-- section GetStarted start -->
+    <section class="w-full getStarted">
+      <div class="w-[90%] mx-auto mt-12">
+        <div
+          class="main1 lg:py-24 flex flex-col lg:flex-row justify-between gap:5 gap-8"
+        >
+          <div class="left w-full lg:w-[59%]">
+            <h2
+              class="text-[2rem] w-[80%] md:w-[80%] sm:text-[45px] leading-10 md:leading-snug lg:text-7xl font-semibold capitalize"
+            >
+              How do u get <span class="greenLine">started ?</span>
+            </h2>
+          </div>
+          <div class="right w-[80%] lg:w-[20%]">
+            <p>
+              component library to build your own components and pieces of UI.
+              Reuse existing Hero, sections
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="main2 lg:py-15 flex flex-col lg:flex-row justify-between items-center gap-14 lg:gap-6 xl:gap-14 mt-12"
+        >
+          <div
+            class="box lg:h-[340px] xl:h-auto group px-3 lg:pt-5 flex flex-col items-center border-4 rounded-[20px] border-gray-800 relative duration-1000 hover:bg-[#ffe87386]"
+          >
+            <div
+              class="hidden sm:block absolute left-[-15%] top-[-10%] scale-0 group-hover:scale-100 duration-1000"
+            >
+              <img src="./assets/agency.png" alt="" />
+            </div>
+            <h2 class="self-start text-2xl lg:text-5xl card-count">1</h2>
+            <div class="w-full xl:w-[70%] text-center">
+              <h2 class="text-2xl lg:w-[90%] xl:text-3xl font-semibold">
+                Send us a free email with all the infomration.
+              </h2>
+              <p class="text-base leading-7">
+                we provide world-class services for every type of business.
+              </p>
+            </div>
+            <div
+              class="img-box w-[80%] h-[120px] xl:h-[200px] bg-[#FFE773] rounded-[20px] flex justify-center items-center relative bottom-[-30px] lg:bottom-[-60px]"
+            >
+              <img
+                class="w-[80px] lg:w-[40%]"
+                src="./assets/asset 7.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            class="box lg:h-[340px] xl:h-auto group px-3 lg:pt-5 flex flex-col items-center border-4 rounded-[20px] border-gray-800 relative duration-1000 hover:bg-[#ffc0b379]"
+          >
+            <div
+              class="hidden sm:block absolute left-[-15%] top-[-10%] scale-0 group-hover:scale-100 duration-1000"
+            >
+              <img src="./assets/agency.png" alt="" />
+            </div>
+            <h2 class="self-start text-2xl lg:text-5xl card-count">2</h2>
+            <div class="w-full lg:w-[90%] xl:w-[70%] text-center">
+              <h2 class="text-2xl xl:text-3xl font-semibold">
+                Our team will work full time on your mission..
+              </h2>
+              <p class="text-base leading-7">
+                we provide world-class services for every type of business.
+              </p>
+            </div>
+            <div
+              class="img-box w-[80%] h-[120px] xl:h-[200px] bg-[#FFC0B3] rounded-[20px] flex justify-center items-center relative bottom-[-30px] lg:bottom-[-60px]"
+            >
+              <img
+                class="w-[80px] lg:w-[40%]"
+                src="./assets/asset 8.png"
+                alt=""
+              />
+
+              <div id="dots_animation-two" class="absolute hidden lg:block">
+                <img src="./assets/asset 2.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="box lg:h-[340px] xl:h-auto group px-3 lg:pt-5 flex flex-col items-center border-4 rounded-[20px] border-gray-800 relative duration-1000 hover:bg-[#beffb26c]"
+          >
+            <div
+              class="hidden sm:block absolute left-[-15%] top-[-10%] scale-0 group-hover:scale-100 duration-1000"
+            >
+              <img src="./assets/agency.png" alt="" />
+            </div>
+            <h2 class="self-start text-2xl lg:text-5xl card-count">3</h2>
+            <div class="w-full lg:w-[90%] xl:w-[70%] text-center">
+              <h2 class="text-2xl xl:text-3xl font-semibold">
+                Pay only if you're satisfied with the result!
+              </h2>
+              <p class="text-base leading-7">
+                we provide world-class services for every type of business.
+              </p>
+            </div>
+            <div
+              class="img-box w-[80%] h-[120px] xl:h-[200px] bg-[#BDFFB2] rounded-[20px] flex justify-center items-center relative bottom-[-30px] lg:bottom-[-60px]"
+            >
+              <img
+                class="w-[80px] lg:w-[40%]"
+                src="./assets/asset 9.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section GetStarted end-->
+
+    <!-- growBusiness Section  start-->
+    <section id="GrowYourBusiness" class="mt-36">
+      <div
+        class="w-[90%] mx-auto flex flex-col lg:flex-row justify-between items-center"
+      >
+        <div class="left lg:w-[40%]">
+          <div>
+            <img src="./assets/asset 10.png" alt="" />
+          </div>
+        </div>
+        <div class="right lg:w-[55%] mt-10">
+          <div class="flex flex-col gap-10">
+            <h2
+              class="text-3xl sm:text-[45px] md:leading-[52px] lg:leading-[50px] xl:lg:w-[90%] xl:lg:text-[4.5rem] font-semibold capitalize xl:leading-[80px]"
+            >
+              We Provide The <span class="greenLine">Solutions</span> To Grow
+              Your Business
+            </h2>
+            <p class="text-sm md:w-[80%] lg:text-lg">
+              Increase your efficiencies, and create a better experience for
+              everyone involved. Automate your workflows with tools you use
+              every day.
+            </p>
+            <div class="text-base lg:text-lg text-gray-600 lg:font-semibold">
+              <div class="flex gap-2 items-center">
+                <i class="fa-regular fa-circle-check text-green-500"></i>
+                <span>User-friendly platform to learn in your way</span>
+              </div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-regular fa-circle-check text-green-500"></i>
+                <span>Packed with modern technology</span>
+              </div>
+              <div class="flex gap-2 items-center">
+                <i class="fa-regular fa-circle-check text-green-500"></i>
+                <span class="w-[60%] sm:w-full"
+                  >Become a tool for payment, settlement and clearing</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- growBusiness Section  end-->
+
+    <!-- Recommended section  start-->
+    <div id="recommanded" class="mt-20 lg:mt-36 w-[90%] mx-auto">
+      <div class="text-center">
+        <h6 class="text-2xl font-medium lg:text-3xl">
+          Recommended by world-class companies
+        </h6>
+      </div>
+
+      <div class="swiper-cont mt-12">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="w-[40px] contrast-0 hover:contrast-100 duration-500"
+                src="./assets/asset 12.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="assets/asset 13.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="./assets/asset 14.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="./assets/asset 15.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="./assets/asset 16.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="./assets/asset 12.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="assets/asset 13.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="./assets/asset 14.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="./assets/asset 15.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="contrast-0 hover:contrast-100 duration-500"
+                src="./assets/asset 16.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Recommended section  end-->
+
+    <!-- New design section  -->
+    <section
+      class="mt-20 pt-36 py-20 text-white"
+      style="background-image: url(assets/asset\ 40.jpeg)"
+    >
+      <div class="w-[90%] mx-auto">
+        <div class="flex flex-col items-center text-center">
+          <div class="xl:w-[60%] flex flex-col items-center text-center">
+            <h2
+              class="text-3xl sm:text-[45px] md:leading-[52px] lg:leading-[50px] xl:lg:w-[80%] xl:lg:text-[4.5rem] font-semibold capitalize xl:leading-[80px]"
+            >
+              Learn New Design Skills That Will <br class="sm:block" />
+              <span class="greenLine">Help You</span>
+            </h2>
+            <p class="py-4 xl:py-10 text-lg md:w-[80%] lg:text-lg">
+              component library to build your own components and pieces of UI.
+              Reuse existing Hero, sections.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="main mt-5 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between"
+        >
+          <div class="boxMain w-full lg:w-[25%]">
+            <div class="subBox1">
+              <div
+                class="imgParent bg-[#FFE773] w-[100px] h-[80px] lg:w-[30%] rounded-[20%] xl:rounded-lg xl:h-[100px] flex items-center justify-center"
+              >
+                <img
+                  class="h-[50%] lg:h-[70%]"
+                  src="./assets/asset 44.svg"
+                  alt=""
+                />
+              </div>
+              <h3 class="capitalize py-5 text-2xl font-bold">
+                creative design
+              </h3>
+              <p class="w-full lg:w-[80%]">
+                Our learning management system creates a personalized experience
+                for learners
+              </p>
+            </div>
+
+            <div class="SubBox2 mt-10">
+              <div
+                class="imgParent bg-[#FFC0B3] w-[100px] h-[80px] lg:w-[30%] rounded-[20%] xl:rounded-lg xl:h-[100px] flex items-center justify-center"
+              >
+                <img class="h-[70%]" src="./assets/asset 45.svg" alt="" />
+              </div>
+              <h3 class="py-5 text-2xl font-bold">Turn ideas</h3>
+              <p class="w-full lg:w-[70%]">
+                Our learning management system creates a personalized experience
+                for learners
+              </p>
+            </div>
+          </div>
+
+          <div class="boxMain w-full lg:w-[33%] my-8 lg:my-0">
+            <div
+              class="img-parent md:h-[270px] md:w-full overflow-hidden rounded-xl lg:w-full lg:h-full"
+            >
+              <img
+                class="rounded-xl md:h-full md:w-full md:scale-[2] lg:scale-100"
+                src="./assets/asset 17.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="boxMain w-full lg:w-[25%]">
+            <div class="subBox1">
+              <div
+                class="imgParent bg-[#BDFFB2] w-[100px] h-[80px] lg:w-[30%] rounded-[20%] xl:rounded-lg xl:h-[100px] flex items-center justify-center"
+              >
+                <img class="h-[70%]" src="./assets/asset 47.svg" alt="" />
+              </div>
+              <h3 class="capitalize py-5 text-2xl font-bold">
+                Suppoert Support
+              </h3>
+              <p class="w-full lg:w-[80%]">
+                Our learning management system creates a personalized experience
+                for learners
+              </p>
+            </div>
+
+            <div class="SubBox2 mt-10">
+              <div
+                class="imgParent bg-[#9FE8FF] w-[100px] h-[80px] lg:w-[30%] rounded-[20%] xl:rounded-lg xl:h-[100px] flex items-center justify-center"
+              >
+                <img class="h-[70%]" src="./assets/asset 48.svg" alt="" />
+              </div>
+              <h3 class="capitalize py-5 text-2xl font-bold">
+                Scalable system
+              </h3>
+              <p class="w-full lg:w-[80%]">
+                Our learning management system creates a personalized experience
+                for learners
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New design section end  -->
+
+    <!-- meet people section  -->
+    <section class="meetPeoples mt-12 lg:mt-40 mb-12">
+      <div class="w-[90%] mx-auto">
+        <div class="main1">
+          <h2
+            class="text-3xl sm:text-[45px] md:leading-[52px] lg:leading-[50px] xl:lg:w-[60%] lg:text-[4.5rem] font-semibold capitalize xl:leading-[80px]"
+          >
+            Meet Our <br class="sm:hidden" />
+            <span class="greenLine">Awesome</span> People
+          </h2>
+        </div>
+
+        <div
+          class="main2 flex flex-col lg:flex-row justify-between items-center mt-5 lg:mt-10 xl:mt5 lg:gap-5"
+        >
+          <div class="w-full lg:w-[28%]">
+            <p class="text-lg">
+              component library to build your own components and pieces of UI.
+              Reuse existing Hero, sections
+            </p>
+            <div class="bg-Grenne rounded-xl text-white my-6">
+              <div
+                class="p-10"
+                style="background-image: url(assets/asset\ 38.png)"
+              >
+                <div
+                  class="img-cont bg-white w-[30%] md:w-[18%] lg:w-[30%] rounded-full p-5"
+                >
+                  <img src="./assets/asset 18.png" alt="" />
+                </div>
+                <h2 class="text-8xl lg:text-7xl xl:text-8xl font-bold">
+                  4.9 <span class="text-3xl"> /5</span>
+                </h2>
+                <p class="py-5 w-[220px]">
+                  Clients rate professionals on Google.
+                </p>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full mt-5 mb-9 lg:my-0 lg:w-[22%] hover:bg-[#fcf5eb] relative group duration-1000"
+          >
+            <div class="absolute left-[-50px] top-[-40px]">
+              <img
+                class="scale-0 hidden lg:block group-hover:scale-75 duration-500"
+                src="./assets/agency.png"
+                alt=""
+              />
+            </div>
+            <div class="w-[100%]">
+              <img
+                class="rounded-3xl w-full"
+                src="./assets/asset 19.jpeg"
+                alt=""
+              />
+            </div>
+            <div
+              class="border-[3px] rounded-2xl pt-10 px-5 border-black w-[100%] mt-[-40px]"
+            >
+              <div class="py-5">
+                <h3 class="text-xl lg:text-3xl font-bold">Oliva Rahina</h3>
+                <span class="text-Grenne">Web Developer</span>
+              </div>
+              <h3><span class="font-bold">Ph.</span> +01 2342543378</h3>
+
+              <div class="py-5">
+                <i
+                  class="fa-brands fa-facebook p-3 border-2 border-black rounded-full MeetIcons"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="3BoxLat w-full lg:w-auto flex gap-5 lg:gap-6 xl:gap-5 flex-col"
+          >
+            <div
+              class="1stLast flex flex-col md:flex-row hover:bg-[#fcf5eb] relative duration-1000 group"
+            >
+              <div class="absolute left-[-50px] top-[-40px]">
+                <img
+                  class="scale-0 hidden lg:block group-hover:scale-75 duration-500"
+                  src="./assets/agency.png"
+                  alt=""
+                />
+              </div>
+              <div class="w-full md:w-[50%] lg:w-[70%] z-10">
+                <img
+                  class="w-full rounded-3xl"
+                  src="./assets/asset 20.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border-[3px] rounded-2xl px-12 mt-[-30px] md:mt-0 lx:px-20 border-black w-[100%] md:ms-[-30px]"
+              >
+                <div class="mt-10 mb-5 lg:my-2 xl:my-5">
+                  <h3 class="text-xl lg:text-3xl font-bold">Romina Ron</h3>
+                  <span class="text-Grenne">Expert Consultant</span>
+                </div>
+                <h3><span class="font-bold">Ph.</span> +01 2342543378</h3>
+                <div class="py-5">
+                  <i
+                    class="fa-brands fa-instagram p-3 border-2 border-black rounded-full MeetIcons"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="2ndLast flex flex-col md:flex-row hover:bg-[#fcf5eb] relative duration-1000 group"
+            >
+              <div class="absolute left-[-50px] top-[-40px]">
+                <img
+                  class="scale-0 hidden lg:block group-hover:scale-75 duration-500"
+                  src="./assets/agency.png"
+                  alt=""
+                />
+              </div>
+              <div class="w-full md:w-[50%] lg:w-[70%] z-10">
+                <img
+                  class="w-full rounded-3xl"
+                  src="./assets/asset 21.jpeg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border-[3px] rounded-2xl px-12 mt-[-30px] md:mt-0 xl:px-20 border-black w-[100%] md:ms-[-30px]"
+              >
+                <div class="mt-10 mb-5 lg:my-2 xl:my-5">
+                  <h3 class="text-xl lg:text-3xl font-bold">Romina Ron</h3>
+                  <span class="text-Grenne">Expert Consultant</span>
+                </div>
+                <h3><span class="font-bold">Ph.</span> +01 2342543378</h3>
+                <div class="py-5">
+                  <i
+                    class="fa-brands fa-twitter p-3 border-2 border-black rounded-full MeetIcons"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- meet people section end -->
+
+    <!-- MeetMove section  -->
+
+    <section class="MeetMove mt-12 xl::mt-32 xl:mb-12">
+      <div class="w-[90%] mx-auto">
+        <div class="MoveAnime hidden lg:flex h-[200px] justify-between">
+          <div class="1stAnime flex justify-around w-[400px]">
+            <div class="boyScaleAnime">
+              <img src="assets/asset 23.png" alt="" />
+            </div>
+            <div class="girlMove">
+              <img src="assets/asset 24.png" alt="" />
+            </div>
+          </div>
+
+          <div class="2ndAnime flex justify-around w-[400px]">
+            <div>
+              <img src="./assets/asset 25.png" alt="" />
+            </div>
+            <div class="girlMove">
+              <img src="./assets/asset 26.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- swiper Anime  -->
+
+        <div class="swiper-cont">
+          <div class="swiper mySwiperTwo">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideMake text-center flex justify-center flex-col items-center"
+                >
+                  <div class="dataPerosn">
+                    <div class="w-[180px] mx-auto">
+                      <img class="w-full" src="./assets/asset 22.png" alt="" />
+                    </div>
+                    <h2 class="my-4 text-2xl font-bold">
+                      Marthan Smith <span class="font-medium">at Google</span>
+                    </h2>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                    <span><i class="fa-solid fa-star text-[#FFD43B]"></i></span>
+                  </div>
+                  <p
+                    class="text-xl leading-8 text-gray-600 xl:text-3xl font-light xl:w-[70%] my-4"
+                  >
+                    “This is one the most transparent referral programs I've
+                    ever used before.but to earn and make them earn as well. I
+                    earned money by sharing referral link on Facebook. Besides,
+                    it's double-sided and it lets me not only share a great
+                    service with my friends”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="MoveAnime hidden lg:flex justify-between xl:my-10">
+          <div class="1stAnime flex justify-around w-[400px]">
+            <div class="boyScaleAnime2">
+              <img src="assets/asset 28.png" alt="" />
+            </div>
+            <div class="girlMove2">
+              <img src="assets/asset 27.png" alt="" />
+            </div>
+          </div>
+
+          <div class="2ndAnime flex justify-around w-[400px]">
+            <div class="boyScaleAnime2Set">
+              <img src="./assets/asset 30.png" alt="" />
+            </div>
+            <div class="girlMove2">
+              <img src="./assets/asset 29.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MeetMove section end -->
+
+    <!-- Plans work section  -->
+    <section
+      class="PlanWork mt-40 py-20"
+      style="background-image: url(assets/asset\ 37.png)"
+    >
+      <div class="w-[90%] mx-auto mt-10">
+        <div class="text-center flex justify-center flex-col items-center">
+          <h2
+            class="text-3xl sm:text-[45px] md:leading-[52px] lg:leading-[50px] xl:lg:w-[100%] xl:lg:text-[4.5rem] font-semibold capitalize xl:leading-[80px]"
+          >
+            Choose A Plan That <br class="sm:block" />
+            <span class="greenLine">Works</span>
+            For You
+          </h2>
+          <p class="py-4 xl:py-10 text-lg md:w-[100%] lg:text-2xl xl:w-[62%]">
+            component library to build your own components and pieces of UI.
+            Reuse existing Hero, sections.
+          </p>
+        </div>
+
+        <!-- cardss -->
+        <div
+          class="allCards flex flex-col gap-5 lg:flex-row justify-between items-center"
+        >
+          <div
+            class="relative group hover:bg-white duration-1000 card1 w-full md:w-[60%] lg:w-[30%] p-5 xl:p-12 border-[3px] border-black rounded-3xl"
+          >
+            <div
+              class="hidden sm:block absolute left-[-50px] top-[-50px] scale-0 group-hover:scale-100 duration-1000"
+            >
+              <img src="./assets/agency.png" alt="" />
+            </div>
+            <h3 class="text-4xl font-bold">Individuals</h3>
+            <p class="w-full xl:w-72 leading-7 py-5">
+              ecommerce solution and a marketing hub, all in one.
+            </p>
+            <div class="plans py-5">
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>24x7 Premium support</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>Site Optimisation</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>Monthly Report</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>No Minimum Term</span>
+              </div>
+            </div>
+            <h2 class="text-6xl font-bold">
+              $90 <span class="text-sm">/ month</span>
+            </h2>
+            <div class="my-10">
+              <a
+                href="#"
+                class="bg-white py-4 px-12 xl:py-5 xl:px-20 rounded-[40px] border-[3px] border-black"
+                >Subscribe Now</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="card2 relative group hover:bg-white duration-1000 w-full md:w-[60%] lg:w-[30%] p-5 xl:p-12 border-[3px] border-black rounded-3xl"
+          >
+            <div
+              class="hidden sm:block absolute left-[-50px] top-[-50px] scale-0 group-hover:scale-100 duration-1000"
+            >
+              <img src="./assets/agency.png" alt="" />
+            </div>
+            <h3 class="text-4xl font-bold">Professionals</h3>
+            <p class="w-full lg:w-72 leading-7 py-5">
+              ecommerce solution and a marketing hub, all in one.
+            </p>
+            <div class="plans py-5">
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>24x7 Premium support</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>Site Optimisation</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>Monthly Report</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>No Minimum Term</span>
+              </div>
+            </div>
+            <h2 class="text-6xl font-bold">
+              $160 <span class="text-sm">/ month</span>
+            </h2>
+            <div class="my-10">
+              <a
+                href="#"
+                class="bg-white py-4 px-12 xl:py-5 xl:px-20 rounded-[40px] border-[3px] border-black"
+                >Subscribe Now</a
+              >
+            </div>
+            <div id="dots_animation_Work" class="absolute hidden lg:block">
+              <img src="./assets/asset 2.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="card3 relative hover:bg-white duration-1000 group w-full md:w-[60%] lg:w-[30%] p-5 xl:p-12 border-[3px] border-black rounded-3xl"
+          >
+            <div
+              class="hidden sm:block absolute left-[-50px] top-[-50px] scale-0 group-hover:scale-100 duration-1000"
+            >
+              <img src="./assets/agency.png" alt="" />
+            </div>
+            <h3 class="text-4xl font-bold">Business</h3>
+            <p class="w-full lg:w-72 leading-7 py-5">
+              ecommerce solution and a marketing hub, all in one.
+            </p>
+            <div class="plans py-5">
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>24x7 Premium support</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>Site Optimisation</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>Monthly Report</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="dot_green"></div>
+                <span>No Minimum Term</span>
+              </div>
+            </div>
+            <h2 class="text-6xl font-bold">
+              $290 <span class="text-sm">/ yearly</span>
+            </h2>
+            <div class="my-10">
+              <a
+                href="#"
+                class="bg-white py-4 px-12 lg:py-5 xl:px-20 rounded-[40px] border-[3px] border-black"
+                >Subscribe Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Plans work section end  -->
+
+    <!-- FrequemtlyQuestion section -->
+
+    <section class="Frequently my-10 lg:my-20">
+      <div class="w-[90%] mx-auto">
+        <div class="my-5 xl:my-0">
+          <h2
+            class="text-3xl sm:text-[45px] md:leading-[52px] lg:leading-[50px] lg:w-[60%] xl:text-[4.5rem] font-semibold capitalize xl:leading-[80px]"
+          >
+            Frequently Asked <br class="sm:hidden" />
+            <span class="greenLine">Questions</span>
+          </h2>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-5"
+        >
+          <div class="lg:w-[40%]">
+            <p>
+              component library to build your own components and pieces of UI.
+              Reuse existing Hero, sections
+            </p>
+            <div class="FaqParent w-[100%]">
+              <div class="subParent mt-10">
+                <div
+                  class="question duration-100 relative z-10 border-2 border-black rounded-[20px] lg:rounded-3xl flex gap-5 p-5 items-center"
+                >
+                  <i
+                    class="questionAroow fa-solid fa-angle-right duration-100"
+                  ></i>
+                  <h4 class="capitalize lg:text-xl xl:text-2xl font-bold">
+                    What is the main purpose of landing page?
+                  </h4>
+                </div>
+                <div
+                  class="Answer duration-100 h-0 overflow-hidden ms-5 mt-[-20px] w-[96%] border-black rounded-xl"
+                >
+                  <p>
+                    A landing page aims to capture information from contacts in
+                    exchange for something of value, such as a retail offer code
+                    or business-to-business (B2B) insights in the form of a
+                    white paper.
+                  </p>
+                </div>
+              </div>
+
+              <div class="subParent mt-10">
+                <div
+                  class="question duration-100 relative z-10 border-2 border-black rounded-[20px] lg:rounded-3xl flex gap-5 p-5 items-center"
+                >
+                  <i
+                    class="questionAroow fa-solid fa-angle-right duration-100"
+                  ></i>
+                  <h4 class="capitalize lg:text-xl xl:text-2xl font-bold">
+                    what do you my purpose of a landing page ?
+                  </h4>
+                </div>
+                <div
+                  class="Answer duration-100 h-0 overflow-hidden ms-5 mt-[-20px] w-[96%] border-black rounded-xl"
+                >
+                  <p>
+                    A landing page aims to capture information from contacts in
+                    exchange for something of value, such as a retail offer code
+                    or business-to-business (B2B) insights in the form of a
+                    white paper.
+                  </p>
+                </div>
+              </div>
+              <div class="subParent mt-10">
+                <div
+                  class="question duration-100 relative z-10 border-2 border-black rounded-3xl flex gap-5 p-5 items-center"
+                >
+                  <i
+                    class="questionAroow fa-solid fa-angle-right duration-100"
+                  ></i>
+                  <h4 class="capitalize lg:text-xl xl:text-2xl font-bold">
+                    Will Learn How to code Webbsite as well ?
+                  </h4>
+                </div>
+                <div
+                  class="Answer duration-100 h-0 overflow-hidden ms-5 mt-[-20px] w-[96%] border-black rounded-xl"
+                >
+                  <p>
+                    A landing page aims to capture information from contacts in
+                    exchange for something of value, such as a retail offer code
+                    or business-to-business (B2B) insights in the form of a
+                    white paper.
+                  </p>
+                </div>
+              </div>
+              <div class="subParent mt-10">
+                <div
+                  class="question duration-100 relative z-10 border-2 border-black rounded-[20px] lg:rounded-3xl flex gap-5 p-5 items-center"
+                >
+                  <i
+                    class="questionAroow fa-solid fa-angle-right duration-100"
+                  ></i>
+                  <h4 class="capitalize lg:text-xl xl:text-2xl font-bold">
+                    understand and analyze the information ?
+                  </h4>
+                </div>
+                <div
+                  class="Answer duration-100 h-0 overflow-hidden ms-5 mt-[-20px] w-[96%] border-black rounded-xl"
+                >
+                  <p>
+                    A landing page aims to capture information from contacts in
+                    exchange for something of value, such as a retail offer code
+                    or business-to-business (B2B) insights in the form of a
+                    white paper.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 lg:w-[60%] relative">
+            <div class="faqDotsMove absolute hidden lg:block">
+              <img src="./assets/asset 2.png" alt="" />
+            </div>
+            <img class=" rounded-3xl w-full" src="assets/asset 31.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FrequemtlyQuestion section end-->
+
+    <!-- RecentNews section -->
+    <section class="recentNews">
+      <div class="w-[90%] mx-auto">
+        <div class="text-center flex justify-between flex-col items-center">
+          <h2
+            class="text-3xl sm:text-[45px] md:leading-[52px] lg:leading-[50px] xl:text-[4.5rem] font-semibold capitalize xl:leading-[80px] my-2"
+          >
+            Recent
+            <span class="greenLine">News</span>
+          </h2>
+          <p class="lg:text-2xl w-full xl:w-[60%]">
+            component library to build your own components and pieces of UI.
+            Reuse existing Hero, sections
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row justify-evenly gap-10 lg:gap-5 items-center my-10"
+        >
+          <div class="cardNews lg:w-[30%]">
+            <div
+              class="bg-Grenne w-[60%] md:w-[40%] lg:w-[50%] text-white rounded-tl-2xl rounded-tr-2xl p-3 flex gap-5 items-center"
+            >
+              <i class="fa-regular fa-calendar"></i>
+              <h4>Dec 14,2024</h4>
+            </div>
+            <div>
+              <img
+                class="md:w-full lg:w-auto"
+                src="./assets/asset 32.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5">
+              <h6 class="text-Grenne border-b-2 border-[#00800090] w-fit">
+                Develoment
+              </h6>
+              <h3 class="text-xl font-semibold HeadingunderLineuper">
+                <span class="HeadingunderLine relative"
+                  >Hiring Your Startup’s First Customer </span
+                ><span class="HeadingunderLine relative">Success Lead</span>
+              </h3>
+              <div class="flex gap-10">
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-user"></i>
+                  <span>by Admin</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-message"></i>
+                  <span>2 Comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardNews lg:w-[30%]">
+            <div
+              class="bg-Grenne w-[60%] md:w-[40%] lg:w-[50%] text-white rounded-tl-2xl rounded-tr-2xl p-3 flex gap-5 items-center"
+            >
+              <i class="fa-regular fa-calendar"></i>
+              <h4>Dec 14,2024</h4>
+            </div>
+            <div>
+              <img
+                class="md:w-full lg:w-auto"
+                src="./assets/asset 33.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5">
+              <h6 class="text-Grenne border-b-2 border-[#00800090] w-fit">
+                Develoment
+              </h6>
+              <h3 class="text-xl font-semibold HeadingunderLineuper">
+                <span class="HeadingunderLine relative"
+                  >Hiring Your Startup’s First Customer </span
+                ><span class="HeadingunderLine relative">Success Lead</span>
+              </h3>
+              <div class="flex gap-10">
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-user"></i>
+                  <span>by Admin</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-message"></i>
+                  <span>2 Comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cardNews lg:w-[30%]">
+            <div
+              class="bg-Grenne w-[60%] md:w-[40%] lg:w-[50%] text-white rounded-tl-2xl rounded-tr-2xl p-3 flex gap-5 items-center"
+            >
+              <i class="fa-regular fa-calendar"></i>
+              <h4>Dec 14,2024</h4>
+            </div>
+            <div>
+              <img
+                class="md:w-full lg:w-auto"
+                src="./assets/asset 34.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col gap-5">
+              <h6 class="text-Grenne border-b-2 border-[#00800090] w-fit">
+                Develoment
+              </h6>
+              <h3 class="text-xl font-semibold HeadingunderLineuper">
+                <span class="HeadingunderLine relative"
+                  >Hiring Your Startup’s First Customer </span
+                ><span class="HeadingunderLine relative">Success Lead</span>
+              </h3>
+              <div class="flex gap-10">
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-user"></i>
+                  <span>by Admin</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <i class="fa-regular fa-message"></i>
+                  <span>2 Comments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footerSection  -->
+    <footer class="mt-20" style="background-image: url(assets/asset\ 40.jpeg)">
+      <div class="w-[90%] mx-auto pt-16 lg:pt-40 text-white">
+        <div class="text-center flex flex-col items-center">
+          <h2
+            class="text-3xl sm:text-[45px] md:leading-[52px] lg:leading-[50px] xl:text-[4.5rem] font-semibold capitalize xl:leading-[80px] w-[90%] lg:w-full"
+          >
+            Start Your Business <br class="hidden lg:block" />
+            And
+            <span class="greenLine">Achieve Goals</span>
+          </h2>
+          <p class="lg:text-2xl my-6">
+            Great and strong landing page made to enhance the marketer's
+            workflow.
+          </p>
+          <a
+            href="#"
+            class="bg-Grenne px-12 py-3 text-lg sm:px-12 sm:py-3 rounded-full sm:text-lg font-bold text-white"
+            >Get a Quote</a
+          >
+        </div>
+
+        <div
+          class="contactUs my-24 flex flex-col md:flex-row md:flex-wrap justify-between sm:items-center gap-5"
+        >
+          <div class="card flex gap-5 items-center">
+            <div class="bg-[#ffe773] px-3 py-5 lg:py-8 lg:px-5 rounded-2xl">
+              <img src="assets/asset 51.svg" alt="" />
+            </div>
+            <div class="flex lg:gap-2 flex-col">
+              <h6 class="lg:text-xl font-bold">Phone:</h6>
+              <div>
+                <h6>Home: +1238717662</h6>
+                <h6>Office: +1458794512</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="card flex gap-5 items-center">
+            <div class="bg-[#ffc0b3] px-3 py-5 lg:py-8 lg:px-5 rounded-2xl">
+              <img src="assets/asset 52.svg" alt="" />
+            </div>
+            <div class="flex lg:gap-2 flex-col">
+              <h6 class="lg:text-xl font-bold">Phone:</h6>
+              <div>
+                <h6>Home: +1238717662</h6>
+                <h6>Office: +1458794512</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="card flex gap-5 items-center">
+            <div class="bg-[#bdffb2] px-3 py-5 lg:py-8 lg:px-5 rounded-2xl">
+              <img src="assets/asset 53.svg" alt="" />
+            </div>
+            <div class="flex lg:gap-2 flex-col">
+              <h6 class="lg:text-xl font-bold">Phone:</h6>
+              <div>
+                <h6>Home: +1238717662</h6>
+                <h6>Office: +1458794512</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-5 flex-col md:flex-row md:flex-wrap justify-between lg:items-center mt-12 border-t py-4 lg:py-8"
+        >
+          <div class="w-[8rem] lg:w-auto">
+            <img class="w-[100%] lg:fit" src="assets/asset 35.png" alt="" />
+          </div>
+          <div>
+            <p class="font-medium">
+              © 2023 Anex by Winsfolio. All Rights Reserved.
+            </p>
+          </div>
+          <div class="flex gap-2 lg:gap-4">
+            <i class="fa-brands border p-3 rounded-full fa-facebook"></i>
+            <i class="fa-brands border p-3 rounded-full fa-youtube"></i>
+            <i class="fa-brands border p-3 rounded-full fa-twitter"></i>
+            <i class="fa-brands border p-3 rounded-full fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="./script.js"></script>
+  </body>
+</html>

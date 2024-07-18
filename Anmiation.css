@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+}
+
+.nav-fixed{
+  position: fixed;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+z-index: 10;
+}
+
+.navRight{
+  right: 10%;
+  background: rgba( 151, 185, 115, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 40px;
+}
+
+#dots_animation{
+    position: absolute;
+    bottom: -8%;
+    right: 12%;
+    animation: dotani 5s infinite;
+    z-index: -1;
+    opacity:0.9;
+}
+
+#dots_animation-two{
+  position: absolute;
+  animation: dotsTwo 5s infinite; 
+  bottom: -80px;
+  left: -50px;
+  z-index: -1;
+  opacity:0.9;
+}
+.unlimated_design{
+    background-image:url("assets/asset\ 37.png");
+}
+.greenLine{
+  position: relative;
+}
+.greenLine::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left:0;
+  height: 6px;
+  width: 100%;
+  background-color: #108A00;
+}
+
+
+.MeetIcons{
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.5s;
+  
+}
+.MeetIcons:hover{
+  background: #000;
+  color: #fff;
+  
+
+}
+
+.MeetIcons::after{
+  content: "";
+  height: 100%;
+  width:  100%;
+  background-color: black;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.MeetIcons:hover::after{
+  bottom: 0;
+}
+
+
+
+@media  (max-width:500px) {
+  .greenLine::after{
+ 
+    height:3px;
+    bottom: -2px;
+
+ 
+  }
+}
+@media  (max-width:1200px) {
+  .greenLine::after{
+ 
+    height:5px;
+ 
+  }
+}
+
+@media (min-width:528px) {
+    .headline{
+        position: relative;
+    }
+    .headline::after{
+        content: "";
+        background-color: #108A00;
+        height: 8px;
+        width: 350px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@keyframes dotani {
+    0%{
+      bottom:-8%;
+  
+    }
+    50%{
+      bottom: -10%;
+  
+    }
+    100%{
+      bottom: -8%;
+  
+    }
+  }
+  
+@keyframes dotsTwo {
+    0%{
+      bottom: -80;
+  
+    }
+    50%{
+      bottom: -70px;
+  
+    }
+    100%{
+      bottom: -80px;
+  
+    }
+  }
+
+  .dot_new_animation {
+    animation-name: movePic;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movePic {
+    0% { transform: translatey(0); }
+    50% { transform: translatey(-30px); }
+    100% { transform: translatey(0); }
+}
+
+
+
+
+.card-count{
+  color: transparent;
+  -webkit-text-stroke: 1.5px black;
+}
+
+
+/* swiper jss  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.girlMove{
+  animation: girlAnme 5s infinite  linear;
+  transform: translate(40px , 80px);
+
+}
+.boyScaleAnime{
+  animation: boyAnme 5s infinite  linear;
+}
+
+@keyframes boyAnme {
+  0%{
+    scale: 100%;
+  }
+  50%{
+    scale: 120%;
+  }
+  100%{
+    scale: 100%;
+  }
+}
+
+@keyframes girlAnme {
+    0%{
+      transform:  translate(40px , 80px);
+    }
+    50%{
+      transform: translate(54px , 95px);
+    }
+    100%{
+      transform:  translate(40px , 80px);
+    }
+}
+
+  /* animation 2  */
+.boyScaleAnime2{
+  
+  animation: boyAnme2 5s infinite;
+  transform: translate(0, 100px);
+}
+.boyScaleAnime2Set{
+  transform: translate(0, 100px);
+
+}
+
+.girlMove2{
+  animation: girlMoveTwo 10s infinite;
+}
+
+@keyframes girlMoveTwo {
+
+  0%{
+    transform: translate(0,0)
+  }
+  50%{
+    transform: translate(20%,40%)
+  }
+  75%{
+    transform: translate(30%,-10%)
+  }
+  100%{
+    transform: translate(0,0)
+  }
+
+}
+
+
+
+
+@keyframes boyAnme2 {
+    0%{
+      scale: 100%;
+
+    }
+    50%{
+      scale: 120%;
+
+    }
+    100%{
+      scale: 100%;
+
+    }
+}
+
+
+/* Works for You  */
+.dot_green{
+  height: 13px;
+  width: 13px;
+  background-color: green;
+  border-radius: 50%;
+}
+#dots_animation_Work{
+  /* position: absolute; */
+  animation: dots_threeWork 5s infinite;  
+   bottom: -80px; 
+  left: 0;
+  z-index: -1;
+  opacity:0.9; 
+}
+@keyframes dots_threeWork {
+  0%{
+    bottom: -80;
+
+  }
+  50%{
+    bottom: -70px;
+
+  }
+  100%{
+    bottom: -80px;
+
+  }
+}
+
+.faqQuestion{
+  background-color: #108A00;
+  color: white;
+}
+.faqAnswer{
+  height: 100%;
+  overflow: hidden;
+  padding: 4rem;
+  border: 2px solid green;
+}
+
+.faqDotsMove{ 
+  position: absolute;
+  right: 40px;
+  animation: faqAnme 5s infinite alternate;
+  top: -90px;
+}
+
+@keyframes faqAnme {
+  0%{
+    top: -90px;
+  }
+  50%{
+    top: -50px;
+  }
+
+  100%{
+    top: -90px;
+  }
+}
+
+.HeadingunderLineuper:hover{
+  /* text-decoration: underline; */
+  transition: all 2s;
+  color: #108A00;
+
+}
+
+
+.HeadingunderLine::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: green;
+  transition: all 0.5s;
+}
+  .HeadingunderLineuper:hover .HeadingunderLine::after{
+  width: 100%;
+}
+
+.allBtnAnme{
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden !important
+
+}
+.allBtnAnme::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  bottom:0%;
+  left: 0;
+  height: 0%;
+  background-color: black;
+  transition: all 0.5s;
+  z-index: -1;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+
+}
+.allBtnAnme:hover::after{
+  height: 140%;
+ 
+}
