@@ -94,19 +94,14 @@ var swiper = new Swiper(".mySwiperTwo", {
 // Faq functionality /
 
 
-// Select all question elements
 const questions = document.querySelectorAll(".question");
 
-let activeQuestion = null; // Track the currently active question
+let activeQuestion = null; 
 
 questions.forEach((element) => {
-    // Select the corresponding answer and arrow elements
-    const answer = element.nextElementSibling; // Assuming the answer element is the next sibling
-    const questionArrow = element.querySelector(".questionArrow"); // Assuming the arrow is within the question
-
-    // Add a click event listener to each question element
+    const answer = element.nextElementSibling;
+    const questionArrow = element.querySelector(".questionArrow");
     element.addEventListener("click", () => {
-        // If there's an active question and it's not the current one, reset it
         if (activeQuestion && activeQuestion !== element) {
             const activeAnswer = activeQuestion.nextElementSibling;
             const activeArrow = activeQuestion.querySelector(".questionArrow");
@@ -120,16 +115,15 @@ questions.forEach((element) => {
             }
         }
 
-        // Toggle the clicked question's classes
         element.classList.toggle("faqQuestion");
         if (answer) {
             answer.classList.toggle("faqAnswer");
         }
         if (questionArrow) {
+            console.log("dorn")
             questionArrow.classList.toggle("fa-angle-down");
         }
 
-        // Update the active question
         activeQuestion = element.classList.contains("faqQuestion") ? element : null;
     });
 });
@@ -141,6 +135,5 @@ questions.forEach((element) => {
 // nav 
 const nav_menu=document.querySelector("#nav_menu")
 const sideBars=()=>{
-    console.log(nav_menu)
     nav_menu.classList.toggle("navRight")
 }

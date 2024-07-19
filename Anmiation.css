@@ -13,15 +13,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 z-index: 10;
 }
 
-.navRight{
-  right: 10%;
-  background: rgba( 151, 185, 115, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 3.5px );
--webkit-backdrop-filter: blur( 3.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 40px;
+@media (max-width:1024px) {
+  .navRight{
+    right: 0%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 40px;
+  }
 }
 
 #dots_animation{
@@ -362,8 +364,11 @@ padding: 40px;
   .HeadingunderLineuper:hover .HeadingunderLine::after{
   width: 100%;
 }
+  
+
 
 .allBtnAnme{
+  transition: all 0.5s;
 
   position: relative;
   z-index: 1;
@@ -388,4 +393,98 @@ padding: 40px;
 .allBtnAnme:hover::after{
   height: 140%;
  
+}
+
+
+
+
+
+
+.allBtnAnmeTwo{
+  transition: all 0.5s;
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden !important
+}
+.allBtnAnmeTwo::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  bottom:0%;
+  left: 0;
+  height: 0%;
+  background-color: #108A00;
+  transition: all 0.5s;
+  z-index: -1;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.allBtnAnmeTwo:hover{
+  color: white;
+}
+.allBtnAnmeTwo:hover::after{
+  height: 140%;
+  border:2px solid #108A00;
+
+}
+
+.allBtnAnmeFooter{
+  transition: all 0.5s;
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden !important
+}
+
+
+.allBtnAnmeFooterIcons{
+  position: relative;
+  z-index: 1;
+  overflow: hidden !important
+}
+
+.allBtnAnmeFooterIcons::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  bottom:0%;
+  left: 0;
+  height: 0%;
+  background-color: #108A00;
+  transition: all 0.5s;
+  z-index: -1;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+
+.allBtnAnmeFooterIcons:hover::after{
+  height: 100%;
+
+}
+
+
+
+
+.allBtnAnmeFooter::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  bottom:0%;
+  left: 0;
+  height: 0%;
+  background-color: white;
+  transition: all 0.5s;
+  z-index: -1;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.allBtnAnmeFooter:hover{
+  color: black;
+}
+.allBtnAnmeFooter:hover::after{
+  height: 140%;
+  /* border:2px solid #108A00; */
+
 }
